@@ -15,7 +15,7 @@ const Hero = (props) => (
         <SectionText>
         I am a software engineer who is always learning and creating. 
         </SectionText>
-        <Button onClick={props.handleClick}>Learn More</Button>
+        <Button onClick={() => window.location = '#about'}>Learn More</Button>
       </LeftSection>
     </Section>
   </>
