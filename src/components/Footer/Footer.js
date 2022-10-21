@@ -7,7 +7,24 @@ import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTi
 const Footer = () => {
   return (
     <div>
-      Footer
+      <FooterWrapper>
+      <SocialIconsContainer>
+        <CompanyContainer>
+          <Slogan>© All Rights Reserved. 2022 Christine Codes Portfolio.</Slogan>
+        </CompanyContainer>
+        <SocialContainer>
+          <SocialIcons href="https://github.com/hummingbirdcreative">
+            <AiFillGithub size="3rem" />
+          </SocialIcons>
+          <SocialIcons href="https://www.linkedin.com/in/christinegrayb/">
+            <AiFillLinkedin size="3rem" />
+          </SocialIcons>
+          <SocialIcons href="https://google.com">
+            <AiFillInstagram size="3rem" />
+          </SocialIcons>
+        </SocialContainer>
+      </SocialIconsContainer>
+    </FooterWrapper>
     </div>
   );
 };
