@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillStar, AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
+import { AiFillGithub, AiFillLinkedin, AiFillFilePdf } from 'react-icons/ai';
+import { GiDiamonds } from 'react-icons/gi';
+
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
 
@@ -10,7 +11,7 @@ const Header = () =>  (
     <Div1>
       <Link href="/">
         <a style={{ display: 'flex', alignItems: 'center', color:"white" }}>
-          <AiFillStar size="3rem" /> <span>Christine Codes</span>
+          <GiDiamonds size="3rem" /> <span> &nbsp; Christine Codes</span>
         </a>
       </Link>
     </Div1>
@@ -38,9 +39,10 @@ const Header = () =>  (
         <SocialIcons href="https://www.linkedin.com/in/christinegrayb/">
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://google.com">
-          <AiFillInstagram size="3rem"/>
+        <SocialIcons href="https://docs.google.com/document/d/1Uc3kXrvCs_Bgv9SRnU3055eph4wS3Mso4BMLicThu6U/edit?usp=sharing">
+          <AiFillFilePdf size="3rem" />
         </SocialIcons>
+        
       </Div3>
     </Container>
 );

@@ -28,7 +28,7 @@ export const projects = [
   },
   {
     title: 'Clean Beauty',
-    description: "Created a landing page making fetch calls to a beauty API. Website displays and filters beauty products by type and “clean” tag",
+    description: "Website displays and filters beauty products by type and “clean” tag making fetch calls to a beauty API",
     image: 'https://i.imgur.com/dm6XdK2.png',
     tags: ['HTML', 'CSS', 'Javascript'],
     source: 'https://github.com/hummingbirdcreative/project1_cleanbeauty.git',
@@ -37,10 +37,3 @@ export const projects = [
   },
 ];
 
-export const TimeLineData = [
-  { year: 2017, text: 'Started my journey', },
-  { year: 2018, text: 'Worked as a freelance developer', },
-  { year: 2019, text: 'Founded JavaScript Mastery', },
-  { year: 2020, text: 'Shared my projects with the world', },
-  { year: 2021, text: 'Started my own platform', },
-];

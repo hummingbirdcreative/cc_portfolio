@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { DiFirebase, DiPython, DiReact } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -8,19 +8,22 @@ const Technologies = () =>  (
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world.
+      As a recent bootcamp grad I've been able to work with a range a technologies. 
       From Back-end To Design
     </SectionText>
     <List>
       <ListItem>
         <picture>
-          <DiReact size="3rem" />
+          <DiPython size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>Front-End</ListTitle>
+          <ListTitle>Languages</ListTitle>
           <ListParagraph>
-            Experiece with <br />
-            React.js
+            Python<br />
+            Javascript<br />
+            HTML<br />
+            CSS<br />
+            EJS<br />
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -29,22 +32,30 @@ const Technologies = () =>  (
           <DiFirebase size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>Back-End</ListTitle>
+          <ListTitle>Databases</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            Node and Databases
+            Node<br />
+            Firebase<br />
+            PostgreSQL<br />
+            MongoDB<br />
+            AWS<br />
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <picture>
-          <DiZend size="3rem" />
+          <DiReact size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
+          <ListTitle>Libraries/Frameworks</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            tools like Figma
+            React<br />
+            Express.js<br />
+            Django<br />
+            Bootstrap<br />
+            Tailwind<br />
+            Materialize<br />
+            Styled Components<br />
           </ListParagraph>
         </ListContainer>
       </ListItem>
