@@ -7,7 +7,7 @@ import { RightSection } from './ProfilePhotoStyles';
 
 const Hero = (props) => (
   <>
-    <Section row nopadding>
+    <Section style={{ height: "600px" }}row nopadding>
       <LeftSection>
         <SectionTitle main center style={{ marginTop: "50px", marginBottom: 1, paddingBottom: 1 }}>
           <AnimatedGradientText style={{ fontSize: "70px" }}>
