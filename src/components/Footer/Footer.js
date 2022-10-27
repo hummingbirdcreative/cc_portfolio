@@ -6,7 +6,7 @@ import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTi
 
 const Footer = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "#EE5B25" }}>
       <FooterWrapper>
       <SocialIconsContainer>
         <CompanyContainer>

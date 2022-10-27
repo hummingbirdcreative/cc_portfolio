@@ -1,12 +1,14 @@
 import React from 'react';
 
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
+import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img, Container } from './ProjectsStyles';
 import {  Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 import { AiFillGithub } from 'react-icons/ai';
 import { FiExternalLink } from 'react-icons/fi';
+import { urlObjectKeys } from 'next/dist/next-server/lib/utils';
 
 const Projects = () => (
+  <Container>
   <Section nopadding id="projects">
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
@@ -42,6 +44,7 @@ const Projects = () => (
       })}
     </GridContainer>
   </Section>
+  </Container>
 );
 
 export default Projects;

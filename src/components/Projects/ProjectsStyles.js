@@ -1,5 +1,16 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  background-image: url("https://i.imgur.com/JAckKks.jpg");
+  padding: 1rem;
+  padding-top: 5rem;
+  
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+`;
+
 export const Img = styled.img`
   width: 400px;
   border-top-left-radius: 10px;

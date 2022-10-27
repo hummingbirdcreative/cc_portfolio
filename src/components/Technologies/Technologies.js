@@ -1,9 +1,10 @@
 import React from 'react';
 import { DiFirebase, DiPython, DiReact } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import { Container, List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
 const Technologies = () =>  (
+  <Container>
   <Section id="tech">
     <SectionDivider divider />
     <SectionTitle style={{ paddingBottom: "2rem" }}>Technologies</SectionTitle>
@@ -59,8 +60,9 @@ const Technologies = () =>  (
         </ListContainer>
       </ListItem>
     </List>
-    <SectionDivider colorAlt />
+  
   </Section>
+  </Container>
 );
 
 export default Technologies;

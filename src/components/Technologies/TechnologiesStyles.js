@@ -1,5 +1,15 @@
 import styled from 'styled-components'
 
+export const Container = styled.div`
+  background-color: #Defe7b;
+  padding: 0px;
+  padding-top: 2rem;
+ 
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+`;
 export const ImageContainer = styled.div`
   text-align: center;
   background-image: radial-gradient(50% 50% at 50% 50%, rgba(79, 108, 176, 0.25) 53.8%, rgba(79, 108, 176, 0) 100%);

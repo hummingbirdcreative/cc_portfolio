@@ -1,9 +1,12 @@
 import GitHubCalendar from "react-github-calendar";
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Container } from "./TimeLineStyles";
 
 const Timeline = () => {
   return (
-    <Section id="about">
+    <Container>
+    <Section id="about" style={{ paddingTop: "4rem" }}>
+    <SectionDivider colorAlt />
       <SectionTitle style={{ paddingTop: "4rem" }}>About Me</SectionTitle>
       <SectionText style={{ paddingBottom: "0" }}>
       I am a full-stack web developer who enjoys creating precise code to solve problems creatively. With a background in design and customer service, I am passionate about visual aesthetics and good design that works uniquely for each client’s needs. I am a problem solver who has cultivated the ability to adapt quickly and find concise solutions.      </SectionText>
@@ -20,8 +23,9 @@ const Timeline = () => {
       />
     </p>
     <br />
-      <SectionDivider />
+      
     </Section>
+    </Container>
   );
 };
 

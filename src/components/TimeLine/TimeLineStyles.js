@@ -1,5 +1,15 @@
-
 import styled from 'styled-components'
+
+export const Container = styled.div`
+  background-color: white;
+  padding: 1rem;
+  padding-top: 2rem;
+  
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+`;
 
 export const CarouselContainer = styled.ul`
   max-width: 1040px;
