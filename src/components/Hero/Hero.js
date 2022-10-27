@@ -10,11 +10,11 @@ const Hero = (props) => (
       <LeftSection>
         <SectionTitle main center style={{ marginTop: "50px", marginBottom: 1, paddingBottom: 1 }}>
           <AnimatedGradientText style={{ fontSize: "70px" }}>
-          Hi, I'm Christine
+            Hi, I'm Chrisine
           </AnimatedGradientText>
         </SectionTitle>
         <SectionText>
-        I'm a full-stack software engineer. 
+        a full-stack software engineer
         </SectionText>
         <Button><a style={{ color: "white" }}href="#about">Learn More</a></Button>
       </LeftSection>

@@ -8,7 +8,7 @@ const Technologies = () =>  (
     <SectionDivider divider />
     <SectionTitle style={{ paddingBottom: "2rem" }}>Technologies</SectionTitle>
     <SectionText>
-      I've been able to work with a range a technologies from Back-end To Design.
+      I've been able to work with a range of technologies from back-end To design.
     </SectionText>
     <List>
       <ListItem>
@@ -37,7 +37,7 @@ const Technologies = () =>  (
             Firebase<br />
             PostgreSQL<br />
             MongoDB<br />
-            AWS<br />
+            {/* AWS<br /> */}
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -48,7 +48,7 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Libraries/Frameworks</ListTitle>
           <ListParagraph>
-            React<br />
+            React.js<br />
             Express.js<br />
             Django<br />
             Bootstrap<br />
