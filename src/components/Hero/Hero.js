@@ -2,19 +2,21 @@ import React from 'react';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import { AnimatedGradientText, LeftSection } from './HeroStyles';
 
 const Hero = (props) => (
   <>
     <Section row nopadding>
       <LeftSection>
-        <SectionTitle main center>
+        <SectionTitle main center style={{ marginTop: "50px", marginBottom: 1, paddingBottom: 1 }}>
+          <AnimatedGradientText style={{ fontSize: "70px" }}>
           Hi, I'm Christine
+          </AnimatedGradientText>
         </SectionTitle>
         <SectionText>
         I'm a full-stack software engineer. 
         </SectionText>
-        <Button onClick={props.handleClick}>Learn More</Button>
+        <Button><a style={{ color: "white" }}href="#about">Learn More</a></Button>
       </LeftSection>
     </Section>
   </>
