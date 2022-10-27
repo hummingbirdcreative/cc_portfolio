@@ -4,7 +4,7 @@ import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles
 const Timeline = () => {
   return (
     <Section id="about">
-      <SectionTitle>About Me</SectionTitle>
+      <SectionTitle style={{ paddingTop: "4rem" }}>About Me</SectionTitle>
       <SectionText style={{ paddingBottom: "0" }}>
       I am a full-stack web developer who enjoys creating precise code to solve problems creatively. With a background in design and customer service, I am passionate about visual aesthetics and good design that works uniquely for each client’s needs. I am a problem solver who has cultivated the ability to adapt quickly and find concise solutions.      </SectionText>
       <p style={{ justifyContent: "center", paddingBottom: "10px" }}>
