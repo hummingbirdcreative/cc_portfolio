@@ -3,7 +3,7 @@ export const projects = [
     title: 'Vita Life Story',
     description: "Group project using Python, Django, SQL, and AWS to create a photo sharing app",
       image: 'https://i.imgur.com/g97RV6k.png',
-      tags: ['Python', 'Django', 'SL', 'AWS'],
+      tags: ['Python', 'Django', 'SQL', 'AWS'],
     code: 'https://github.com/hummingbirdcreative/Vita-App.git',
     live: 'https://vita-life-story.herokuapp.com/',
     id: 0,

@@ -76,7 +76,7 @@ export const CardInfo = styled.p`
 font-family: 'Hind', sans-serif;
   width: 100%;
   padding: 0 50px;
-  color: #e4e6e7;
+  color: #EE5B25;
   font-style: 2rem;
   line-height: 24px;
   text-align: center;
@@ -96,19 +96,14 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-color:#fff;
-font-family: 'Hind', serif;
-font-size: 1.6rem;
-margin: 0 10px;
-padding: 2rem 4rem;
-box-shadow: ${({ disabled }) => disabled ? 'inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3)' : 'none'};
-border-radius: 15px;
-transition: 0.5s;
-background: ${({ alt }) => alt ? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' : 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
-opacity: ${({ disabled }) => disabled ? '.5' : '1'};
-transition: .4s ease;
-&:hover{
-  color: #Defe7b;
+transition: 0.3s ease;
+color: #7187C3;
+border-radius: 50px;
+  padding: 8px;
+&:hover {
+    background-color: #Defe7b;
+    transform: scale(1.2);
+    cursor: pointer;
 
 }
 `;
