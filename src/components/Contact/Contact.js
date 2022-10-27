@@ -4,8 +4,10 @@ import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles
 import { Container } from './ContactStyles';
 
 
+
 const Contact = () => {
     return (
+
         <Container>
         <Section id="contact" style={{ paddingTop: "4rem" }}>
         <SectionDivider colorAlt />

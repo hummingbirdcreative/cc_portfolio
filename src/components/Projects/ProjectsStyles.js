@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-image: url("https://i.imgur.com/g806KrT.jpg");
+  background-color: #Defe7b;
   padding: 1rem;
   padding-top: 5rem;
   

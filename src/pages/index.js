@@ -4,6 +4,7 @@ import Projects from '../components/Projects/Projects';
 import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import Contact from '../components/Contact/Contact';
+import SVG from '../components/SVG/SVG';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
 
@@ -14,6 +15,7 @@ const Home = () => {
         <Hero />
         <BgAnimation /> 
        </Section>
+      <SVG />
       <Projects />
       <Technologies />
       <Timeline />
