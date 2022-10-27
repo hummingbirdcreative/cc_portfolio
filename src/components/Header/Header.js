@@ -10,7 +10,7 @@ const Header = () =>  (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{ display: 'flex', alignItems: 'center', color:"white" }}>
+        <a style={{ display: 'flex', alignItems: 'center', color:"#EE5B25" }}>
           <GiDiamonds size="3rem" /> <span> &nbsp; Christine Codes</span>
         </a>
       </Link>
@@ -42,7 +42,6 @@ const Header = () =>  (
         <SocialIcons href="https://docs.google.com/document/d/1Uc3kXrvCs_Bgv9SRnU3055eph4wS3Mso4BMLicThu6U/edit?usp=sharing">
           <AiFillFilePdf size="3rem" />
         </SocialIcons>
-        
       </Div3>
     </Container>
 );
