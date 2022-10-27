@@ -3,6 +3,7 @@ import React from 'react';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { AnimatedGradientText, LeftSection } from './HeroStyles';
+import { RightSection } from './ProfilePhotoStyles';
 
 const Hero = (props) => (
   <>
@@ -10,14 +11,17 @@ const Hero = (props) => (
       <LeftSection>
         <SectionTitle main center style={{ marginTop: "50px", marginBottom: 1, paddingBottom: 1 }}>
           <AnimatedGradientText style={{ fontSize: "70px" }}>
-            Hi, I'm Chrisine
+            Hi, I'm Christine
           </AnimatedGradientText>
         </SectionTitle>
         <SectionText>
-        a full-stack software engineer
+        I'm a full-stack software engineer based in Los Angeles
         </SectionText>
         <Button><a style={{ color: "white" }}href="#about">Learn More</a></Button>
       </LeftSection>
+      <RightSection>
+        <img style={{ height: "600px", width: "600px "}} src="https://i.imgur.com/hrodn1e.png" />
+      </RightSection>
     </Section>
   </>
 );
