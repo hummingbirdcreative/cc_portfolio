@@ -48,12 +48,13 @@ export const Div3 = styled.div`
 // Navigation Links
 export const NavLink = styled.a`
   font-family: 'Hind', sans-serif;
+  color: "EE5B25";
   font-size: 2rem;
   line-height: 32px;
   color: #7187C3;
   transition: 0.4s ease;
   &:hover {
-    color: #DBEF99;
+    color: #Defe7b;
     opacity: 1;
     cursor: pointer;
   }
@@ -77,7 +78,7 @@ export const ContactDropDown = styled.button`
     outline: none;
   }
   &:hover {
-    color: #DBEF99;
+    color: #Defe7b;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.4rem 0;
@@ -112,7 +113,7 @@ color: #7187C3;
 border-radius: 50px;
   padding: 8px;
 &:hover {
-    background-color: #DBEF99;
+    background-color: #Defe7b;
     transform: scale(1.2);
     cursor: pointer;
     

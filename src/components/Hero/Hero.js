@@ -1,23 +1,22 @@
 import React from 'react';
 
-import { HeroSection, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
 const Hero = (props) => (
   <>
-    <HeroSection row nopadding>
+    <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          Hi I'm Christine <br />
-          Welcome to my personal portfolio
+          Hi, I'm Christine
         </SectionTitle>
         <SectionText>
-        I am a software engineer who is always learning and creating. 
+        I'm a full-stack software engineer. 
         </SectionText>
-        <Button onClick={() => window.location = '#about'}>Learn More</Button>
+        <Button onClick={props.handleClick}>Learn More</Button>
       </LeftSection>
-    </HeroSection>
+    </Section>
   </>
 );
 

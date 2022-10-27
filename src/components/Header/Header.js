@@ -10,8 +10,8 @@ const Header = () =>  (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{ display: 'flex', alignItems: 'center', color:"#EE5B25" }}>
-          <GiDiamonds size="3rem" /> <span> &nbsp; Christine Codes</span>
+        <a style={{ display: 'flex', alignItems: 'center', color:"#EE5B25", fontFamily: 'Cormorant' }}>
+          <GiDiamonds size="3rem" /> <span style={{ fontWeight: 'bold', fontSize: '2rem' }}> &nbsp; Christine Graybosch</span>
         </a>
       </Link>
     </Div1>
