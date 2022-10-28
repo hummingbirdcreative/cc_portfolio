@@ -8,6 +8,7 @@ export const Container = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    padding-left: 1rem;
   }
 `;
 export const ImageContainer = styled.div`

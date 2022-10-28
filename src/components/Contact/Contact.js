@@ -1,7 +1,7 @@
 import React, { useState }from 'react'
 
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { Container } from './ContactStyles';
+import { Container, Form, Input } from './ContactStyles';
 import Button from '../../styles/GlobalComponents/Button';
 
 const Contact = () => {
@@ -26,15 +26,15 @@ const Contact = () => {
         <SectionDivider colorAlt />
           <SectionTitle style={{ paddingTop: "4rem" }}>Contact</SectionTitle>
           <SectionText style={{ paddingBottom: "0" }}>
-          <form style={{ display: "flex", flexDirection:"row" }} action="https://public.herotofu.com/v1/16e978e0-5652-11ed-b82c-5d75eaa7ccff" method="post">
+          <Form action="https://public.herotofu.com/v1/16e978e0-5652-11ed-b82c-5d75eaa7ccff" method="post">
   <div>
-    <input style={{ fontSize: "20px", padding: "4px", color:"#7187C3", marginRight: "4px", border: 'white' }} placeholder="Your Name" name="Name" id="name" type="text" required />
+    <Input placeholder="Your Name" name="Name" id="name" type="text" required />
   </div>
   <div>
-    <input style={{ fontSize: "20px", padding: "4px", color:"#7187C3", marginRight: "4px", border: 'white' }} placeholder="Your Email" name="Email" id="email" type="email" required  />
+    <Input placeholder="Your Email" name="Email" id="email" type="email" required  />
   </div>
   <div>
-    <input style={{ fontSize: "20px", padding: "4px", color:"#7187C3", marginRight: "4px", border: 'white' }} placeholder="Your Message" name="Message" id="message" type="message" required  />
+    <Input placeholder="Your Message" name="Message" id="message" type="message" required  />
   </div>
   
 
@@ -43,7 +43,7 @@ const Contact = () => {
   </div>
  
   
-</form>
+</Form>
        
         </SectionText>                  
             
