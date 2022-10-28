@@ -1,7 +1,7 @@
 import React, { useState }from 'react'
 
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { Container, Form, Input } from './ContactStyles';
+import { Container, Form, Input, SubmitInput } from './ContactStyles';
 import Button from '../../styles/GlobalComponents/Button';
 
 const Contact = () => {
@@ -40,7 +40,7 @@ const Contact = () => {
   
 
   <div>
-  <Button><input type="submit" value="Submit"/></Button>
+  <SubmitInput type="submit" value="Submit"></SubmitInput>
   </div>
  
   
