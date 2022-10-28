@@ -28,13 +28,13 @@ const Contact = () => {
           <SectionText style={{ paddingBottom: "0" }}>
           <form style={{ display: "flex", flexDirection:"row" }} action="https://public.herotofu.com/v1/16e978e0-5652-11ed-b82c-5d75eaa7ccff" method="post">
   <div>
-    <input style={{ fontSize: "20px", padding: "4px", color:"#7187C3", marginRight: "4px", }} placeholder="Your Name" name="Name" id="name" type="text" required />
+    <input style={{ fontSize: "20px", padding: "4px", color:"#7187C3", marginRight: "4px", border: 'white' }} placeholder="Your Name" name="Name" id="name" type="text" required />
   </div>
   <div>
-    <input style={{ fontSize: "20px", padding: "4px", color:"#7187C3", marginRight: "4px" }} placeholder="Your Email" name="Email" id="email" type="email" required  />
+    <input style={{ fontSize: "20px", padding: "4px", color:"#7187C3", marginRight: "4px", border: 'white' }} placeholder="Your Email" name="Email" id="email" type="email" required  />
   </div>
   <div>
-    <input style={{ fontSize: "20px", padding: "4px", color:"#7187C3", marginRight: "4px" }} placeholder="Your Message" name="Message" id="message" type="message" required  />
+    <input style={{ fontSize: "20px", padding: "4px", color:"#7187C3", marginRight: "4px", border: 'white' }} placeholder="Your Message" name="Message" id="message" type="message" required  />
   </div>
   
 

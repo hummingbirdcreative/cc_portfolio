@@ -20,6 +20,7 @@ export const Img = styled.img`
   overflow: hidden;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
+  }
 `
 
 export const GridContainer = styled.section`
