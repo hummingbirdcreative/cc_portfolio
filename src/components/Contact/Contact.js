@@ -2,8 +2,7 @@ import React, { useState }from 'react'
 
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { Container } from './ContactStyles';
-
-const FORM_ENDPOINT = "https://public.herotofu.com/v1/16e978e0-5652-11ed-b82c-5d75eaa7ccff";
+import Button from '../../styles/GlobalComponents/Button';
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -27,22 +26,23 @@ const Contact = () => {
         <SectionDivider colorAlt />
           <SectionTitle style={{ paddingTop: "4rem" }}>Contact</SectionTitle>
           <SectionText style={{ paddingBottom: "0" }}>
-          <form action="https://public.herotofu.com/v1/16e978e0-5652-11ed-b82c-5d75eaa7ccff" method="post">
+          <form style={{ display: "flex", flexDirection:"row" }} action="https://public.herotofu.com/v1/16e978e0-5652-11ed-b82c-5d75eaa7ccff" method="post">
   <div>
-    <label for="name">Your Name</label>
-    <input name="Name" id="name" type="text" required />
+    <input style={{ fontSize: "20px", padding: "4px", color:"#7187C3", marginRight: "4px", }} placeholder="Your Name" name="Name" id="name" type="text" required />
   </div>
   <div>
-    <label for="email">Your Email</label>
-    <input name="Email" id="email" type="email" required  />
+    <input style={{ fontSize: "20px", padding: "4px", color:"#7187C3", marginRight: "4px" }} placeholder="Your Email" name="Email" id="email" type="email" required  />
   </div>
   <div>
-    <label for="message">Your Message</label>
-    <input name="Message" id="message" type="message" required  />
+    <input style={{ fontSize: "20px", padding: "4px", color:"#7187C3", marginRight: "4px" }} placeholder="Your Message" name="Message" id="message" type="message" required  />
   </div>
+  
+
   <div>
-    <input type="submit" value="Submit" />
+  <Button style={{ width:"50%" }}><input style={{ background: "none", border: "none", color: "white" }}type="submit" value="Submit"/></Button>
   </div>
+ 
+  
 </form>
        
         </SectionText>                  
