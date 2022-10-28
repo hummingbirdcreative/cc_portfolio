@@ -13,13 +13,14 @@ export const Form = styled.form`
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding-top: 10px;
+    margin-left: 45px;
   }
   `;
 
 export const Input = styled.input`
- fontSize: 20px;
- padding: 4px;
+ font-size: 20px;
+ padding: 10px;
  color: #7187C3; 
  margin-right: 4px;
  border: white;

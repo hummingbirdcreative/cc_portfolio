@@ -26,6 +26,7 @@ const Contact = () => {
         <SectionDivider colorAlt />
           <SectionTitle style={{ paddingTop: "4rem" }}>Contact</SectionTitle>
           <SectionText style={{ paddingBottom: "0" }}>
+  
           <Form action="https://public.herotofu.com/v1/16e978e0-5652-11ed-b82c-5d75eaa7ccff" method="post">
   <div>
     <Input placeholder="Your Name" name="Name" id="name" type="text" required />
@@ -39,7 +40,7 @@ const Contact = () => {
   
 
   <div>
-  <Button style={{ width:"50%" }}><input style={{ background: "none", border: "none", color: "white" }}type="submit" value="Submit"/></Button>
+  <Button><input type="submit" value="Submit"/></Button>
   </div>
  
   
