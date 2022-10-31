@@ -5,6 +5,7 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import Contact from '../components/Contact/Contact';
 import SVG from '../components/SVG/SVG';
+import Blog from '../components/Blog/Blog';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
 
@@ -19,6 +20,7 @@ const Home = () => {
       <Projects />
       <Technologies />
       <Timeline />
+      <Blog />
       <Contact />
     </Layout>
   );

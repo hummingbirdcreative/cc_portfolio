@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "portfolioblog"
+    "name": "se-blog"
   },
   "api": {
-    "projectId": "y85th07d",
+    "projectId": "9d38x21c",
     "dataset": "production"
   },
   "plugins": [
