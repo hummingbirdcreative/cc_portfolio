@@ -3,8 +3,6 @@ import groq from 'groq'
 import client from '../client'
 import React from 'react'
 
-import { Container } from './blogStyles';
-
 const Blog = ({posts}) => {
     return (
       <Container>
