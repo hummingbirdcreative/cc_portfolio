@@ -5,11 +5,12 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import Contact from '../components/Contact/Contact';
 import SVG from '../components/SVG/SVG';
-import Blog from '../components/Blog/Blog';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
+//import posts from './post/[slug]'
 
-const Home = () => {
+const Home = ({posts}) => {
+  console.log(posts)
   return (
     <Layout>
       <Section grid> 
@@ -20,10 +21,21 @@ const Home = () => {
       <Projects />
       <Technologies />
       <Timeline />
-      <Blog />
       <Contact />
     </Layout>
   );
 };
+
+
+export async function getStaticProps() {
+  const posts = await client.fetch(groq`
+    *[_type == "post" && publishedAt < now()] | order(publishedAt desc)
+  `)
+  return {
+    props: {
+      posts
+    }
+  }
+}
 
 export default Home;
