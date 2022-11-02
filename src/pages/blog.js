@@ -5,7 +5,7 @@ import React from 'react'
 
 const Blog = ({posts}) => {
     return (
-      <Container>
+      
       <div>
         <h1>Welcome to a blog!</h1>
       
@@ -22,7 +22,7 @@ const Blog = ({posts}) => {
         )}
     
       </div>
-      </Container>
+    
     )
 }
 
