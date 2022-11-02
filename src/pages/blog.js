@@ -3,8 +3,11 @@ import groq from 'groq'
 import client from '../client'
 import React from 'react'
 
+import { Container } from './blogStyles';
+
 const Blog = ({posts}) => {
     return (
+      <Container>
       <div>
         <h1>Welcome to a blog!</h1>
       
@@ -21,6 +24,7 @@ const Blog = ({posts}) => {
         )}
     
       </div>
+      </Container>
     )
 }
 

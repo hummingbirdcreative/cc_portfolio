@@ -34,16 +34,13 @@ const Post = ({post}) => {
     body = []
   } = post
   return (
-    <article>
-      <h1>{title}</h1>
-      <span>By {name}</span>
-      {categories && (
-        <ul>
-          Posted in
-          {categories.map(category => <li key={category}>{category}</li>)}
-        </ul>
-      )}
-      {authorImage && (
+    
+    <div className='container mx-auto px-10 mb-8'>
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div className="col-span-1 lg:col-span-8">
+          <h1>{title}</h1>
+          <span>By {name}</span>
+          {authorImage && (
         <div>
           <img
             src={urlFor(authorImage)
@@ -53,11 +50,23 @@ const Post = ({post}) => {
           />
         </div>
       )}
+        </div>
+        <div className="col-span-1 lg:col-span-4">
+        <div className="relative lg:sticky top-8">
+          {categories && (
+          <ul>
+          Posted in
+          {categories.map(category => <li key={category}>{category}</li>)}
+        </ul>
+      )}
       <PortableText
         value={body}
         components={ptComponents}
       />
-    </article>
+      </div>
+      </div>
+  </div>
+    </div>
   )
 }
 

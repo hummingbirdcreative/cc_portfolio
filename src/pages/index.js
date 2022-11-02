@@ -7,7 +7,7 @@ import Contact from '../components/Contact/Contact';
 import SVG from '../components/SVG/SVG';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
-//import posts from './post/[slug]'
+
 
 const Home = ({posts}) => {
   console.log(posts)
