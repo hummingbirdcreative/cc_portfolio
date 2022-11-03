@@ -2,11 +2,14 @@ import Link from 'next/link'
 import groq from 'groq'
 import client from '../client'
 import React from 'react'
+import BlogHeader from '../components/BlogHeader/BlogHeader';
+
 
 const Blog = ({posts}) => {
     return (
-      
-      <div>
+      <>
+      <BlogHeader />
+     
         <h1>Welcome to a blog!</h1>
       
         {posts.length > 0 && posts.map(
@@ -21,7 +24,7 @@ const Blog = ({posts}) => {
             )
         )}
     
-      </div>
+    </>
     
     )
 }
