@@ -35,7 +35,7 @@ const Post = ({post}) => {
   return (
     <article>
       <h1>{post?.title}</h1>
-      <span>By {name}</span>
+      <span>By {post?.name}</span>
       {categories && (
         <ul>
           Posted in
