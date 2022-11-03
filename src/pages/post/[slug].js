@@ -34,13 +34,16 @@ const Post = ({post}) => {
   } = post
   return (
     <article>
-      <h1>{post?.title}</h1>
-      <span>By {post?.name}</span>
+      {!post ? <p>no posts</p> : (
+        <>
+      <h1>{ post.title }</h1>
+      <span>By {post.name}</span>
       {categories && (
         <ul>
           Posted in
           {categories.map(category => <li key={category}>{category}</li>)}
         </ul>
+
       )}
       {authorImage && (
         <div>
@@ -56,7 +59,10 @@ const Post = ({post}) => {
         value={body}
         components={ptComponents}
       />
+      </>
+      )} 
     </article>
+           
   )
 }
 
