@@ -3,7 +3,7 @@ import "tailwindcss/tailwind.css";
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { AnimatedGradientText, LeftSection } from './HeroStyles';
-import { RightSection } from './ProfilePhotoStyles';
+import { RightSection } from '../ProfilePhoto/ProfilePhotoStyles';
 
 const Hero = (props) => (
   <>

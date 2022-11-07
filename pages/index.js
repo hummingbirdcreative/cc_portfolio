@@ -7,6 +7,7 @@ import Contact from '../components/Contact/Contact';
 import SVG from '../components/SVG/SVG';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
+import ProfilePhoto from '../components/ProfilePhoto/ProfilePhoto';
 
 
 const Home = ({posts}) => {
@@ -15,7 +16,8 @@ const Home = ({posts}) => {
     <Layout>
       <Section grid> 
         <Hero />
-        <BgAnimation /> 
+        <ProfilePhoto />
+        {/* <BgAnimation />  */}
        </Section>
       <SVG />
       <Projects />
