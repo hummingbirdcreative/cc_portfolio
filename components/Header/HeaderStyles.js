@@ -2,7 +2,7 @@ import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-image: url("https://i.imgur.com/xw7hBol.png");
+  //background-image: url("https://i.imgur.com/xw7hBol.png");
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;

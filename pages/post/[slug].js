@@ -1,9 +1,10 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-
+import "tailwindcss/tailwind.css";
 import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm, Loader } from '../../components';
 import { getPosts, getPostDetails } from '../../services';
 import { AdjacentPosts } from '../../sections';
+import BlogHeader from '../../components/BlogHeader';
 
 const PostDetails = ({ post }) => {
   const router = useRouter();
@@ -14,7 +15,8 @@ const PostDetails = ({ post }) => {
 
   return (
     <>
-      <div className="container mx-auto px-10 mb-8">
+    <BlogHeader />
+      <div className="container mx-auto px-10 mb-8 pt-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="col-span-1 lg:col-span-8">
             <PostDetail post={post} />
