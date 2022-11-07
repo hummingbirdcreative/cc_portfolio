@@ -24,28 +24,6 @@ const BlogHeader = () => {
         </a>
       </Link>
     </Div1>
-    <Div2>
-      <li>
-        <Link href="#projects">
-          <NavLink>Projects</NavLink>
-        </Link>
-      </li>
-      <li>
-        <Link href="#tech">
-          <NavLink>Technologies</NavLink>
-        </Link>
-      </li>        
-      <li>
-        <Link href="#about">
-          <NavLink>About</NavLink>
-        </Link>
-      </li> 
-      <li>
-        <Link href="/">
-          <NavLink>Portfolio</NavLink>
-        </Link>
-      </li>       
-    </Div2>
       <Div3>
         <SocialIcons href="https://github.com/hummingbirdcreative">
           <AiFillGithub size="3rem" />
@@ -53,7 +31,7 @@ const BlogHeader = () => {
         <SocialIcons href="https://www.linkedin.com/in/christinegrayb/">
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://cdn.hihello.me/cards/091e3346-6e11-4781-aef0-8c7ca222fd93/d060a486-cffd-4764-9a84-20b3dc80b26a.pdf">
+        <SocialIcons href="https://cdn.hihello.me/cards/091e3346-6e11-4781-aef0-8c7ca222fd93/c579f989-48d8-4400-9aee-dd09ce19dd2b.pdf">
           <AiFillFilePdf size="3rem" />
         </SocialIcons>
       </Div3>

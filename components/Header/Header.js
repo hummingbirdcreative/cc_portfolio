@@ -32,7 +32,7 @@ const Header = () =>  (
         </Link>
       </li> 
       <li>
-        <Link href="/blog">
+        <Link href="https://christinegraybosch.com/blog">
           <NavLink>Blog</NavLink>
         </Link>
       </li>       
@@ -44,7 +44,7 @@ const Header = () =>  (
         <SocialIcons href="https://www.linkedin.com/in/christinegrayb/">
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://cdn.hihello.me/cards/091e3346-6e11-4781-aef0-8c7ca222fd93/d060a486-cffd-4764-9a84-20b3dc80b26a.pdf">
+        <SocialIcons href="https://cdn.hihello.me/cards/091e3346-6e11-4781-aef0-8c7ca222fd93/c579f989-48d8-4400-9aee-dd09ce19dd2b.pdf">
           <AiFillFilePdf size="3rem" />
         </SocialIcons>
       </Div3>
