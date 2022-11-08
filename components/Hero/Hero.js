@@ -17,7 +17,7 @@ const Hero = (props) => (
         <SectionText>
         I'm a full-stack software engineer based in Los Angeles
         </SectionText>
-        <Button><a style={{ color: "white" }}href="#about">Learn More</a></Button>
+        <Button><a style={{ color: "white" }} href="#about">Learn More</a></Button>
       </LeftSection>
       {/* <RightSection>
         <img style={{ height: "700px", width: "650px"}} src="https://i.imgur.com/lxxPqiY.png" />
