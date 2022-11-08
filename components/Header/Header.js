@@ -22,9 +22,9 @@ const Header = () =>  (
         </Link>
       </li>
       <li>
-        <a href="#tech">
+        <Link href="#tech">
           <NavLink>Technologies</NavLink>
-        </a>
+        </Link>
       </li>        
       <li>
         <Link href="#about">
@@ -32,7 +32,7 @@ const Header = () =>  (
         </Link>
       </li> 
       <li>
-        <Link href="https://christinegraybosch.com/blog">
+        <Link href="/blog">
           <NavLink>Blog</NavLink>
         </Link>
       </li>       
