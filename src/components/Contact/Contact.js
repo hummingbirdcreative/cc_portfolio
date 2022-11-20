@@ -2,7 +2,6 @@ import React, { useState }from 'react'
 
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { Container, Form, Input, SubmitInput } from './ContactStyles';
-import Button from '../../styles/GlobalComponents/Button';
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);

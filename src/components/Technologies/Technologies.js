@@ -9,7 +9,7 @@ const Technologies = () =>  (
     <SectionDivider divider />
     <SectionTitle style={{ paddingBottom: "2rem" }}>Technologies</SectionTitle>
     <SectionText>
-      I've been able to work with a range of technologies from back-end To design.
+      I've been able to work with a range of technologies from back-end to design.
     </SectionText>
     <List>
       <ListItem>
