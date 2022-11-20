@@ -7,17 +7,13 @@ import Contact from '../components/Contact/Contact';
 import SVG from '../components/SVG/SVG';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
-import ProfilePhoto from '../components/ProfilePhoto/ProfilePhoto';
 
-
-const Home = ({posts}) => {
-  console.log(posts)
+const Home = () => {
   return (
     <Layout>
       <Section grid> 
         <Hero />
-        <ProfilePhoto />
-        {/* <BgAnimation />  */}
+        <BgAnimation /> 
        </Section>
       <SVG />
       <Projects />
@@ -27,6 +23,5 @@ const Home = ({posts}) => {
     </Layout>
   );
 };
-
 
 export default Home;
