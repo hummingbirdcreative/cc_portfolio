@@ -33,7 +33,9 @@ const Header = () =>  (
       </li> 
       <li>
         <Link href="https://portfolio-blog-blue.vercel.app/">
+          <a>
           <NavLink>Blog</NavLink>
+          </a>
         </Link>
       </li>       
     </Div2>
