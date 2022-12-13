@@ -20,7 +20,7 @@ const Hero = (props) => (
         <Button><a style={{ color: "white" }}href="#about">Learn More</a></Button>
       </LeftSection>
       <RightSection>
-        <img style={{ height: "650px", width: "650px"}} src="https://i.imgur.com/lxxPqiY.png" />
+       {/* <img style={{ height: "650px", width: "650px"}} src="https://i.imgur.com/lxxPqiY.png" /> */}
       </RightSection>
     
     </Section>

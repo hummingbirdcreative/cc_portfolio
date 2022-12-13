@@ -1,8 +1,8 @@
 export default {
   // Temp fonts
   fonts: {
-    title: "Cormorant, serif",
-    main: "Montserrat, sans-serif"
+    title: "Montserrat, sans-serif",
+    main: "Hind, sans-serif"
   },
 
   // Breakpoints for responsive design
