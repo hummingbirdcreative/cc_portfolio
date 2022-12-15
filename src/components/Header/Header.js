@@ -1,21 +1,22 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillLinkedin, AiFillFilePdf } from 'react-icons/ai';
-import { GiDiamonds } from 'react-icons/gi';
-
-
+import Hamburger from "../Hamburger/Hamburger"
+import { useState } from 'react';
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
 
-const Header = () =>  (
-  <Container>
-    <Div1>
-      <Link href="/">
-        <a style={{ display: 'flex', alignItems: 'center', color:"#EE5B25", fontFamily: 'Cormorant' }}>
-          <GiDiamonds size="3rem" /> <span style={{ fontWeight: 'bold', fontSize: '2rem' }}> &nbsp; Christine Graybosch</span>
-        </a>
-      </Link>
-    </Div1>
-    <Div2>
+export default function Nav(){
+
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const toggleHamburger = () =>{
+      setHamburgerOpen(!hamburgerOpen)
+  }
+
+  return(
+      <div>
+          <div className="navigation">
+              <ul>
+      <Div2>
       <li>
         <Link href="#projects">
           <NavLink>Projects</NavLink>
@@ -37,20 +38,70 @@ const Header = () =>  (
           <NavLink>Blog</NavLink>
           </a>
         </Link>
-      </li>       
-    </Div2>
-      <Div3>
-        <SocialIcons href="https://github.com/hummingbirdcreative">
-          <AiFillGithub size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://www.linkedin.com/in/christinegrayb/">
-          <AiFillLinkedin size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://cdn.hihello.me/cards/091e3346-6e11-4781-aef0-8c7ca222fd93/4a7c06e7-4510-499b-a094-7685fa2d4e2e.pdf">
-          <AiFillFilePdf size="3rem" />
-        </SocialIcons>
-      </Div3>
-    </Container>
-);
+      </li> 
+      <li>
+      <a href="/"><NavLink><img style={{ height: "40px", width: "40px", marginTop: "none"}} src="https://i.imgur.com/Kq4TEhf.jpg" title="logo" /></NavLink></a> 
+      </li> 
+      </Div2>
+    </ul>
+  
+      
+                  <div className="hamburger" onClick={toggleHamburger}>
+                      <Hamburger isOpen={hamburgerOpen}/>
+                  </div>
+          </div>
 
-export default Header;
+
+          <style jsx>{`
+              .navigation{
+                  width: 100%;
+                  height: 50px;
+              }
+              
+              
+              .navigation ul{
+                  display:flex;
+                  flex-wrap: wrap;
+                  float: right;
+                  margin: 10px;
+                  padding: 10px;
+                  overflow: hidden;
+              }
+              .navigation ul li{
+                  list-style-type: none;
+                  padding-right: 25px;
+              }
+              .hamburger{
+                  display: none;
+                  z-index: 6;
+              } 
+              @media (max-width: 767px){
+                
+                  .hamburger{
+                      display:fixed;
+                      padding-top: 10px;
+                      margin-left: 10px;
+                      z-index: 6;
+                  }
+        
+                 
+                  .navigation ul{
+                      display: ${hamburgerOpen ? 'inline' : 'none'};
+                      background-color: white;
+                      height: 100vh;
+                      width: 50vw;
+                      margin-top: 50px;
+                      position: fixed;
+
+                    
+                      
+                  }
+              }
+              
+             
+              
+          `}</style>
+      </div>
+  )
+
+}

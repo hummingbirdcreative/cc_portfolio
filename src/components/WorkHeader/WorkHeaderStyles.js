@@ -24,7 +24,7 @@ export const Marquee = styled.div`
   font-size: 1em;
   line-height: 1em;
   padding: .5px;
-  color: #7187C3;
+  color: black;
   overflow: hidden;
   white-space: nowrap;
   

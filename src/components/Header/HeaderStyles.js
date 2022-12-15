@@ -3,11 +3,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   //background-image: url("https://i.imgur.com/xw7hBol.png");
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 2rem;
-  padding: 1rem;
+  //display: grid;
+  //grid-template-columns: repeat(4, 1fr);
+  //grid-template-rows: 1fr;
+  //grid-column-gap: 2rem;
+  align-items: center;
+  padding: 2rem;
   padding-top: 2rem;
   
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -19,10 +20,12 @@ export const Container = styled.div`
   }
 `;
 export const Div1 = styled.div`
-  grid-area: 1 / 1 / 2 / 2;
+  //grid-area: 1 / 1 / 2 / 2;
   display: flex;
   flex-direction: row;
   align-content: center;
+  padding-top: -5px;
+  margin-top: 10px;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 3;
   }
@@ -33,6 +36,7 @@ export const Div2 = styled.div`
   justify-content: space-around;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
+    display: block;
   }
 `;
 export const Div3 = styled.div`
@@ -49,13 +53,13 @@ export const Div3 = styled.div`
 // Navigation Links
 export const NavLink = styled.a`
   font-family: 'Hind', sans-serif;
-  color: "#EE5B25";
+  color: black;
   font-size: 2rem;
   line-height: 32px;
-  color: #7187C3;
+  color: black;
   transition: 0.4s ease;
   &:hover {
-    color: #Defe7b;
+    background-color: #Defe7b;
     opacity: 1;
     cursor: pointer;
   }
