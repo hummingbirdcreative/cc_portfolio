@@ -1,15 +1,8 @@
-import Link from 'next/link';
 import React from 'react';
 import Hamburger from '../Hamburger/Hamburger';
 import { useState } from 'react';
-import {
-  Container,
-  Div1,
-  Div2,
-  Div3,
-  NavLink,
-  SocialIcons,
-} from './HeaderStyles';
+import { NavLink } from './NavLink';
+import Image from 'next/image';
 
 export default function Nav() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -22,41 +15,32 @@ export default function Nav() {
     <div>
       <div className="navigation">
         <ul>
-          <Div2>
-            <li>
-              <Link href="#projects" legacyBehavior>
-                <NavLink>Projects</NavLink>
-              </Link>
-            </li>
-            <li>
-              <Link href="#tech" legacyBehavior>
-                <NavLink>Technologies</NavLink>
-              </Link>
-            </li>
-            <li>
-              <Link href="#about" legacyBehavior>
-                <NavLink>About</NavLink>
-              </Link>
-            </li>
-            <li>
-              <Link href="https://portfolio-blog-blue.vercel.app/" legacyBehavior>
-                <a>
-                  <NavLink>Blog</NavLink>
-                </a>
-              </Link>
-            </li>
-            <li>
-              <a href="/">
-                <NavLink>
-                  <img
-                    style={{ height: '40px', width: '40px', marginTop: 'none' }}
-                    src="https://i.imgur.com/Kq4TEhf.jpg"
-                    title="logo"
-                  />
-                </NavLink>
-              </a>
-            </li>
-          </Div2>
+          <li>
+            <NavLink href="#projects">Projects</NavLink>
+          </li>
+          <li>
+            <NavLink href="#tech">Technologies</NavLink>
+          </li>
+          <li>
+            <NavLink href="#about">About</NavLink>
+          </li>
+          <li>
+            <NavLink href="https://portfolio-blog-blue.vercel.app/">
+              Blog
+            </NavLink>
+          </li>
+          <li>
+            <NavLink href="/">
+              <Image
+                alt="Christine Graybosch Logo"
+                className="mt-0"
+                src="https://i.imgur.com/Kq4TEhf.jpg"
+                title="logo"
+                width={40}
+                height={40}
+              />
+            </NavLink>
+          </li>
         </ul>
 
         <div className="hamburger" onClick={toggleHamburger}>

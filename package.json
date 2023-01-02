@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "build": "next build && next export",
-    "dev": "concurrently \"next dev\" && \"yarn styles --watch\"",
+    "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
-    "styles": "tailwindcss -i ./src/styles/global.tailwind.css -o ./src/styles/global.css"
+    "styles": "tailwindcss -i ./src/styles/global.tailwind.css -o ./src/styles/global.css",
+    "styles:watch": "tailwindcss -i ./src/styles/global.tailwind.css -o ./src/styles/global.css --watch"
   },
   "dependencies": {
     "next": "12",

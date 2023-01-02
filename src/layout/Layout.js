@@ -10,7 +10,7 @@ export const Layout = ({ children }) => {
     <Container>
       <WorkHeader />
       <Header />
-      <main>{children}</main>
+      <main className="px-6">{children}</main>
       <Footer />
     </Container>
   );
