@@ -4,15 +4,15 @@
   "private": true,
   "scripts": {
     "build": "next build && next export",
-    "dev": "next dev && yarn styles --watch",
+    "dev": "concurrently \"next dev\" && \"yarn styles --watch\"",
     "lint": "next lint",
     "start": "next start",
     "styles": "tailwindcss -i ./src/styles/global.tailwind.css -o ./src/styles/global.css"
   },
   "dependencies": {
     "next": "12",
-    "react": "17",
-    "react-dom": "17",
+    "react": "18",
+    "react-dom": "18",
     "react-github-calendar": "^3.3.4",
     "react-icons": "^4.2.0",
     "react-multi-carousel": "^2.8.2",
@@ -21,6 +21,7 @@
     "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
+    "concurrently": "^7.6.0",
     "eslint": "^8.31.0",
     "eslint-config-next": "12",
     "eslint-plugin-prettier": "^4.2.1",
