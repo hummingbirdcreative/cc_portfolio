@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Intro } from './components/Intro';
 import { Navigation } from './components/Navigation';
+import { Projects } from './components/Projects';
 
 export default function Home() {
   return (
@@ -12,7 +13,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <Intro />
+      <div className="flex flex-wrap w-full">
+        <Intro />
+        <Projects />
+      </div>
     </>
   );
 }
