@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "yarn styles && next build",
     "start": "next start",
+    "styles": "tailwindcss -i ./styles/global.tailwind.css -o ./styles/global.css",
+    "styles:watch": "yarn styles --watch",
     "lint": "next lint"
   },
   "dependencies": {
