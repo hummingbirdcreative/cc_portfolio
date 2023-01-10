@@ -1,5 +1,4 @@
 import { Project } from './item';
-import VitaImage from './assets/vita-life-story.png';
 
 export const PROJECT_ITEMS: Project[] = [
   {

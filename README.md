@@ -44,3 +44,24 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## TODO:
+
+- Add Technologies to Homepage
+
+1. define a component called `Technologies.tsx`
+2. put it in the `pages/components` directory
+3. create a react Function component (`React.FC`) and display a description and the Languages (Python, JS, etc), Databases (Node, Firebase etc), and Libraries–– use typescript to define the shape of the props for the Technologies component. Use the `pages/components/Projects/item.tsx` for a good TS reference.
+4. Import the new component into the `pages/index.tsx` file
+
+- Add About me to Homepage
+  (TODO) details
+
+- Add Days I Code widget
+  (TODO) details
+
+- Add Contact
+  (TODO) details
+
+- Add Footer
+  (TODO) details
